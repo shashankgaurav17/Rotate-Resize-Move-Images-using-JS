@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
 
 	#pane {
@@ -13,10 +13,24 @@
 	html{
 		background-color: black;
 	}
+	
+	#rotate_right{
+		position: absolute;
+		top: 150px;
+		left: 330px;
+	}
+	
+	#rotate_left{
+		position: absolute;
+		top: 150px;
+		left: 460px;
+	}
 
 </style>
 </head>
 <body>
+	<button id="rotate_right"> Rotate  90° Right </button>
+	<button id="rotate_left"> Rotate  90° Left </button>
 	<img src="a.jpg" id="pane" height="100px" width="100px"/>
 <script src="rotate.js"></script>
 <script src="resize.js"></script>
