@@ -46,6 +46,7 @@ function onMouseDown(e) {
 }
 
 function onMove(ee) {
+console.log("inside onMove");
   calc(ee);
   e = ee;
   redraw = true;

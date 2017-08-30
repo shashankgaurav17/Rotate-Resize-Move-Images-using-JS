@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
 
-	#pane {
-		position: absolute;
-		top: 200px;
-		left:400px;
-	}
-	
-	html{
-		background-color: black;
-	}
-	
-	#rotate_right{
-		position: absolute;
-		top: 150px;
-		left: 330px;
-	}
-	
-	#rotate_left{
-		position: absolute;
-		top: 150px;
-		left: 460px;
-	}
+		#pane {
+			position: absolute;
+			top: 200px;
+			left:400px;
+		}
+		
+		
+		#rotate_right{
+			position: absolute;
+			top: 150px;
+			left: 330px;
+		}
+		
+		#rotate_left{
+			position: absolute;
+			top: 150px;
+			left: 460px;
+		}
 
-</style>
+	</style>
+
+	<script src="rotate.js"></script>
+	<script src="svg.js"></script>
 </head>
 <body>
 	<button id="rotate_right"> Rotate  90° Right </button>
 	<button id="rotate_left"> Rotate  90° Left </button>
-	<img src="a.jpg" id="pane" height="100px" width="100px"/>
-<script src="rotate.js"></script>
-<script src="resize.js"></script>
+	<!--<img src="a.jpg" id="pane" height="100px" width="100px"/>-->
+	
+	<div class="bodysec3" id="bodysec3id">
+		<!--<svg id="svgx" width="2693" height="670" xmlns="http://www.w3.org/2000/svg" onload="init(evt)">
+			<g id="map-matrix" transform="matrix(1 0 0 1 0 0)">  
+				<defs>
+					<pattern id="sg" width="10" height="10" patternUnits="userSpaceOnUse">
+						<path d="M 0 10 L 10 10 L 10 0 L 0 0 Z" fill="none" stroke="gray" stroke-width="0.2" />
+					</pattern>
+					<pattern id="g" width="80" height="80" patternUnits="userSpaceOnUse">
+						<rect width="80" height="80" fill="url(#sg)" />
+						<path d="M 0 80 L 80 80 L 80 0 L 0 0 Z" fill="none" stroke="gray" stroke-width="0.2" />
+					</pattern>
+				</defs>
+				<rect id="rec" width="100%" height="100%" fill="url(#g)" />
+
+				<image id="pane" class="draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" x="380" y="180" xlink:href="a.jpg" height="167" width="167"  ></image>
+
+			</g>
+		</svg>-->
+		<img src="a.jpg" id="pane" class="draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" height="100px" width="100px"/>
+	</div>
+	
+	<script src="resize.js"></script>
 </body>
 </html>

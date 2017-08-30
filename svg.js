@@ -4,6 +4,7 @@ var currentY = 0;
 var currentMatrix = 0;
 
 function selectElement(evt) {
+	console.log("select e;ement function called");
     selectedElement = evt.target;
     currentX = evt.clientX;
     currentY = evt.clientY;
